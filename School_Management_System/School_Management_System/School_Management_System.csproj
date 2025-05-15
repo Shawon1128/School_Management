@@ -1,0 +1,628 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{44EC50FF-79A6-4CF3-91EE-A9F795E0D808}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>School_Management_System</RootNamespace>
+    <AssemblyName>School_Management_System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminAccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminAccess.Designer.cs">
+      <DependentUpon>AdminAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class_Details.Designer.cs">
+      <DependentUpon>Class_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteClass.Designer.cs">
+      <DependentUpon>DeleteClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteEmployeeDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteEmployeeDetails.Designer.cs">
+      <DependentUpon>DeleteEmployeeDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteExpenseDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteExpenseDetails.Designer.cs">
+      <DependentUpon>DeleteExpenseDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteFeesDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteFeesDetails.Designer.cs">
+      <DependentUpon>DeleteFeesDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteNotice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteNotice.Designer.cs">
+      <DependentUpon>DeleteNotice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteParent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteParent.Designer.cs">
+      <DependentUpon>DeleteParent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteSalary.Designer.cs">
+      <DependentUpon>DeleteSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteStudentDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteStudentDetails.Designer.cs">
+      <DependentUpon>DeleteStudentDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteTeacherDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteTeacherDetails.Designer.cs">
+      <DependentUpon>DeleteTeacherDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete_SubjectDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete_SubjectDetails.Designer.cs">
+      <DependentUpon>Delete_SubjectDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee_Details.Designer.cs">
+      <DependentUpon>Employee_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Expense_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expense_Details.Designer.cs">
+      <DependentUpon>Expense_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeesDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeesDetails.Designer.cs">
+      <DependentUpon>FeesDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertClass.Designer.cs">
+      <DependentUpon>InsertClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertEmployeeDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertEmployeeDetails.Designer.cs">
+      <DependentUpon>InsertEmployeeDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertExpenseDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertExpenseDetails.Designer.cs">
+      <DependentUpon>InsertExpenseDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertFeesDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertFeesDetails.Designer.cs">
+      <DependentUpon>InsertFeesDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertNotice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertNotice.Designer.cs">
+      <DependentUpon>InsertNotice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertParent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertParent.Designer.cs">
+      <DependentUpon>InsertParent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertSalary.Designer.cs">
+      <DependentUpon>InsertSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertStudentDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertStudentDetails.Designer.cs">
+      <DependentUpon>InsertStudentDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Insert_SubjectDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insert_SubjectDetails.Designer.cs">
+      <DependentUpon>Insert_SubjectDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Insert_TeacherDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insert_TeacherDetails.Designer.cs">
+      <DependentUpon>Insert_TeacherDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notice.Designer.cs">
+      <DependentUpon>Notice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParentAccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParentAccess.Designer.cs">
+      <DependentUpon>ParentAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parent_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parent_Details.Designer.cs">
+      <DependentUpon>Parent_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Salary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salary.Designer.cs">
+      <DependentUpon>Salary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentAccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentAccess.Designer.cs">
+      <DependentUpon>StudentAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentDetails.Designer.cs">
+      <DependentUpon>StudentDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Subject_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subject_Details.Designer.cs">
+      <DependentUpon>Subject_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherAccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherAccess.Designer.cs">
+      <DependentUpon>TeacherAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher_Details.Designer.cs">
+      <DependentUpon>Teacher_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateClass.Designer.cs">
+      <DependentUpon>UpdateClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateEmployeeDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateEmployeeDetails.Designer.cs">
+      <DependentUpon>UpdateEmployeeDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateExpenseDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateExpenseDetails.Designer.cs">
+      <DependentUpon>UpdateExpenseDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateFeesDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateFeesDetails.Designer.cs">
+      <DependentUpon>UpdateFeesDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateNotice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateNotice.Designer.cs">
+      <DependentUpon>UpdateNotice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateParent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateParent.Designer.cs">
+      <DependentUpon>UpdateParent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateSalary.Designer.cs">
+      <DependentUpon>UpdateSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateStudentDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateStudentDetails.Designer.cs">
+      <DependentUpon>UpdateStudentDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateSubjectDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateSubjectDetails.Designer.cs">
+      <DependentUpon>UpdateSubjectDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update_TeacherDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update_TeacherDetails.Designer.cs">
+      <DependentUpon>Update_TeacherDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_School_Management_SystemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_School_Management_SystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_School_Management_SystemDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_School_Management_SystemDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_School_Management_SystemDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_School_Management_SystemDataSet2.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminAccess.resx">
+      <DependentUpon>AdminAccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class_Details.resx">
+      <DependentUpon>Class_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteClass.resx">
+      <DependentUpon>DeleteClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteEmployeeDetails.resx">
+      <DependentUpon>DeleteEmployeeDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteExpenseDetails.resx">
+      <DependentUpon>DeleteExpenseDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteFeesDetails.resx">
+      <DependentUpon>DeleteFeesDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteNotice.resx">
+      <DependentUpon>DeleteNotice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteParent.resx">
+      <DependentUpon>DeleteParent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteSalary.resx">
+      <DependentUpon>DeleteSalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteStudentDetails.resx">
+      <DependentUpon>DeleteStudentDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteTeacherDetails.resx">
+      <DependentUpon>DeleteTeacherDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete_SubjectDetails.resx">
+      <DependentUpon>Delete_SubjectDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee_Details.resx">
+      <DependentUpon>Employee_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expense_Details.resx">
+      <DependentUpon>Expense_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeesDetails.resx">
+      <DependentUpon>FeesDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertClass.resx">
+      <DependentUpon>InsertClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertEmployeeDetails.resx">
+      <DependentUpon>InsertEmployeeDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertExpenseDetails.resx">
+      <DependentUpon>InsertExpenseDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertFeesDetails.resx">
+      <DependentUpon>InsertFeesDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertNotice.resx">
+      <DependentUpon>InsertNotice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertParent.resx">
+      <DependentUpon>InsertParent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertSalary.resx">
+      <DependentUpon>InsertSalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertStudentDetails.resx">
+      <DependentUpon>InsertStudentDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insert_SubjectDetails.resx">
+      <DependentUpon>Insert_SubjectDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insert_TeacherDetails.resx">
+      <DependentUpon>Insert_TeacherDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notice.resx">
+      <DependentUpon>Notice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParentAccess.resx">
+      <DependentUpon>ParentAccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parent_Details.resx">
+      <DependentUpon>Parent_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Salary.resx">
+      <DependentUpon>Salary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentAccess.resx">
+      <DependentUpon>StudentAccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentDetails.resx">
+      <DependentUpon>StudentDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Subject_Details.resx">
+      <DependentUpon>Subject_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherAccess.resx">
+      <DependentUpon>TeacherAccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher_Details.resx">
+      <DependentUpon>Teacher_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateClass.resx">
+      <DependentUpon>UpdateClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateEmployeeDetails.resx">
+      <DependentUpon>UpdateEmployeeDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateExpenseDetails.resx">
+      <DependentUpon>UpdateExpenseDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateFeesDetails.resx">
+      <DependentUpon>UpdateFeesDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateNotice.resx">
+      <DependentUpon>UpdateNotice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateParent.resx">
+      <DependentUpon>UpdateParent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateSalary.resx">
+      <DependentUpon>UpdateSalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateStudentDetails.resx">
+      <DependentUpon>UpdateStudentDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateSubjectDetails.resx">
+      <DependentUpon>UpdateSubjectDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update_TeacherDetails.resx">
+      <DependentUpon>Update_TeacherDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="_School_Management_SystemDataSet.xsc">
+      <DependentUpon>_School_Management_SystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_School_Management_SystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_School_Management_SystemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_School_Management_SystemDataSet.xss">
+      <DependentUpon>_School_Management_SystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_School_Management_SystemDataSet1.xsc">
+      <DependentUpon>_School_Management_SystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_School_Management_SystemDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_School_Management_SystemDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_School_Management_SystemDataSet1.xss">
+      <DependentUpon>_School_Management_SystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_School_Management_SystemDataSet2.xsc">
+      <DependentUpon>_School_Management_SystemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="_School_Management_SystemDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_School_Management_SystemDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_School_Management_SystemDataSet2.xss">
+      <DependentUpon>_School_Management_SystemDataSet2.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teacher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parents.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add employee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update employee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete employee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add notice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update notice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete notice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\class.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete class.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add class.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update class.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete salary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update salary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add salary.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Expense.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete expense.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add expense.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update exp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subject details.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update subject.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add subject.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete subject.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete fees.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fees.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add fees.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update fees.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Admin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student access.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
